@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Skills - Mikaela Dobie</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            position: relative;
+            background: url('assets/background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1;
+        }
+
+        .container, .footer, .navbar {
+            position: relative;
+            z-index: 1;
+        }
+
+        .navbar {
+            background: rgba(39, 77, 49, 0.80) !important;
+        }
+
+        .navbar .nav-link, .navbar-brand {
+            color: white !important;
+        }
+
+        .navbar .nav-link:hover {
+            color: #f8d210 !important;
+        }
+
+        .footer {
+            background: rgba(39, 77, 49, 0.80);
+            color: white;
+        }
+
+        .skill-card {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Mikaela Dobie</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                <li class="nav-item"><a class="nav-link active" href="skills.html">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5">
+    <h2 class="text-center">My Skills</h2>
+    <p class="text-center">Technical and professional skills I have acquired.</p>
+    
+    <div class="row">
+        <div class="col-md-4">
+            <div class="skill-card">
+                <h5>Programming Languages</h5>
+                <p>C++, Python, JavaScript, SQL</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="skill-card">
+                <h5>Web Development</h5>
+                <p>HTML, CSS, Bootstrap, React</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="skill-card">
+                <h5>Database Management</h5>
+                <p>MySQL, PostgreSQL, MongoDB</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-4">
+            <div class="skill-card">
+                <h5>Machine Learning</h5>
+                <p>TensorFlow, scikit-learn, Neural Networks</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="skill-card">
+                <h5>Software Development</h5>
+                <p>Object-Oriented Design, Agile, Git</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="skill-card">
+                <h5>Data Analysis</h5>
+                <p>Pandas, NumPy, Power BI</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer text-center mt-5 p-3">
+    <p>&copy; 2025 Mikaela Dobie. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
