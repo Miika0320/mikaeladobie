@@ -101,78 +101,45 @@
 <div class="container mt-5">
     <h2 class="text-center">My Projects</h2>
     <p class="text-center">A collection of my work and contributions.</p>
-    
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/project1.jpg" class="card-img-top" alt="Rental Service App">
+  
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+  
+      <!-- Project 1 -->
+      <div class="col">
+        <div class="card bg-transparent text-white border-light h-100">
           <div class="card-body">
             <h5 class="card-title">Rental Service Application</h5>
-            <p class="card-text">Android app using Java + Firebase with admin/employee/customer account types.</p>
-            <button class="btn btn-primary">More Details</button>
+            <p class="card-text">Android app for booking and managing services using different account types.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalProject1">More Details</button>
           </div>
         </div>
       </div>
   
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/project2.jpg" class="card-img-top" alt="Hotel DB">
+      <!-- Project 2 -->
+      <div class="col">
+        <div class="card bg-transparent text-white border-light h-100">
           <div class="card-body">
             <h5 class="card-title">Online Hotel Database</h5>
-            <p class="card-text">SpringBoot + PostgreSQL app for hotel booking with database integration.</p>
-            <button class="btn btn-primary">More Details</button>
+            <p class="card-text">SpringBoot web app connected to a PostgreSQL database for hotel reservations.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalProject2">More Details</button>
           </div>
         </div>
       </div>
   
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/project3.jpg" class="card-img-top" alt="Data Analytics">
+      <!-- Project 3 -->
+      <div class="col">
+        <div class="card bg-transparent text-white border-light h-100">
           <div class="card-body">
             <h5 class="card-title">Data Analytics & Mart</h5>
-            <p class="card-text">Python + Power BI project analyzing rental and crime trends using Supabase.</p>
-            <button class="btn btn-primary">More Details</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <!-- Placeholder row for 3 more projects -->
-    <div class="row mt-4">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/placeholder.jpg" class="card-img-top" alt="Placeholder Project">
-          <div class="card-body">
-            <h5 class="card-title">Project Name 4</h5>
-            <p class="card-text">Description of project 4 goes here.</p>
-            <button class="btn btn-primary">More Details</button>
+            <p class="card-text">Data warehouse project for analyzing student rent and crime data using visualizations.</p>
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalProject3">More Details</button>
           </div>
         </div>
       </div>
   
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/placeholder.jpg" class="card-img-top" alt="Placeholder Project">
-          <div class="card-body">
-            <h5 class="card-title">Project Name 5</h5>
-            <p class="card-text">Description of project 5 goes here.</p>
-            <button class="btn btn-primary">More Details</button>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4">
-        <div class="card">
-          <img src="assets/placeholder.jpg" class="card-img-top" alt="Placeholder Project">
-          <div class="card-body">
-            <h5 class="card-title">Project Name 6</h5>
-            <p class="card-text">Description of project 6 goes here.</p>
-            <button class="btn btn-primary">More Details</button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
+  
   
 
 <footer class="footer text-center mt-5 p-3">
@@ -180,5 +147,54 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Modal 1 -->
+<div class="modal fade" id="modalProject1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg text-dark">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel1">Rental Service Application</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Technologies:</strong> Android Studio, Java, Firebase<br><br>
+          Created in Fall 2021 for a Software Engineering course. This app allows users to rent services using separate accounts for Admin, Employee, and Customer. Data is stored and managed using Firebase.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modalProject2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg text-dark">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel2">Online Hotel Database</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Technologies:</strong> SpringBoot, Java, PostgreSQL<br><br>
+          Built in Winter 2023 for a Databases course. This web application allows customers to book hotels and stores the data in a local PostgreSQL database, using Java-based backend logic.
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Modal 3 -->
+  <div class="modal fade" id="modalProject3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg text-dark">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLabel3">Data Analytics & Data Mart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <strong>Technologies:</strong> Python, Power BI, PostgreSQL, Supabase<br><br>
+          Created in Winter 2024 for a Data Science course. This project builds a data warehouse and analyzes trends in student housing prices and crime rates using Power BI dashboards.
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
